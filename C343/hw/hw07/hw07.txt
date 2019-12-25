@@ -1,0 +1,55 @@
+C343 / Summer 2018
+Homework 07
+Name: Yuheng Lin
+Username: yuhelin
+
+---------------------------------------------------------------------------------
+
+Task A:
+
+2. Sort the number sequence [56, 7, 28, 7, 35, 63, 14, 42, 35] by using: 
+
+(a) Insertion sort
+
+[7, 56 , 28, 7, 35, 63, 14, 42, 35]
+[7, 28 , 56, 7, 35, 63, 14, 42, 35]
+[7, 7 , 56, 28, 35, 63, 14, 42, 35]
+[7, 7 , 28, 56, 35, 63, 14, 42, 35]
+[7, 7 , 28, 35, 56, 63, 14, 42, 35]
+[7, 7 , 28, 35, 56, 63, 14, 42, 35]
+[7, 7 , 14, 28, 35, 56, 63, 42, 35]
+[7, 7 , 14, 28, 35, 42, 56, 63, 35]
+[7, 7 , 14, 28, 35, 35, 42, 56, 63]
+
+(b) Mergesort
+
+[56, 7, 28, 7, 35, 63, 14, 42, 35]
+[7, 56] [7, 28] [35, 63] [14, 35, 42]
+[7, 7, 28, 56] [14, 35, 35, 42, 63]
+[7, 7 , 14, 28, 35, 35, 42, 56, 63]
+
+3. What does it mean for a sorting algorithm to be stable?
+
+   It means when the input array with equal values has the same order in the 
+   sorted output array.
+
+4. For each sorting algorithm in the list, answer these questions:
+   Is the algorithm stable? If it is stable, why? If it is not stable, why?  
+
+(a) Insertion
+    Insertion sort is stable. Because insertion sort is from left to right with two items.
+(b) Bubble sort
+    Bubble sort is stable since two equal items will never do swap operation.
+(c) Mergesort
+    Mergesort is stable. Because when we make comparsion with two items in two lists. We can just put
+    the item in the first list in the merged list first if two items in two lists are equal.
+(d) Heapsort
+    Heapsort is not stable. Since parent node can be equal to children node. When we do heapify in
+    Heapsort, we still need to swap and update the current node when parent node is equal to one of
+    its children node.
+
+5. In that case, would the same greedy algorithm for providing change still produce optimal results?
+
+   Yes. Because even through we remove 5-cent coins, we still have 1-cent coin that can state for 5-cent
+   coins with 5 1-cent coins.
+    

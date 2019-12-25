@@ -1,0 +1,9 @@
+C343 / Summer 2018
+Lab Mini-Assignment 01
+Name: Yuheng Lin
+Username: yuhelin
+
+First, I created a arraylist of string then add "A", "T", "C", "G" to the arraylist.
+And created a empty string s. Then, I use a for loop to add a Random letter from arraylist of string
+to the string s.
+Last, print the string s.  

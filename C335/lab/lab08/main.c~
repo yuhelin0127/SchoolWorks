@@ -1,0 +1,58 @@
+/* main.c ---
+*
+* Filename: main.c
+* Description:
+* Author:
+* Maintainer:
+* Created: Thu Jan 10 11:23:43 2013
+/* Code: */
+
+#include <stm32f30x.h> // Pull in include files for F30x standard drivers
+#include <f3d_uart.h>
+#include <f3d_user_btn.h>
+#include <f3d_lcd_sd.h>
+#include <f3d_i2c.h>
+#include <f3d_nunchuk.h>
+#include <f3d_accel.h>
+#include <f3d_mag.h>
+#include <stdio.h>
+
+
+int main(void) {
+
+   setvbuf(stdin, NULL, _IONBF, 0);
+   setvbuf(stdout, NULL, _IONBF, 0);
+   setvbuf(stderr, NULL, _IONBF, 0);\
+
+   f3d_i2c1_init();
+   delay(100);
+   f3d_accel_init();
+   delay(100);
+   f3d_mag_init();
+   delay(100);
+   f3d_nunchuk_init();
+   delay(100);
+   while(1) printf("1\n");
+   f3d_uart_init();
+
+
+   nunchuk_t p;
+
+   while(1){
+     f3d_nunchuk_read(&p);
+     printf("1\n");
+     printf("jx: %c, jy: %c, ax: %f, ay: %f, az: %f, c: %c, z: %c \n", p.jx, p.jy, p.ax, p.ay, p.az, p.c, p.z);
+     delay(500);
+   }
+}
+
+#ifdef USE_FULL_ASSERT
+void assert_failed(uint8_t* file, uint32_t line) {
+/* Infinite loop */
+/* Use GDB to find out why we're here */
+  while (1);
+}
+#endif
+
+/* main.c ends here */
+

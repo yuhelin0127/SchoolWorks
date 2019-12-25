@@ -1,0 +1,21 @@
+Name: Yuheng Lin
+Partner: William Smith
+username: yuhelin
+
+Q1. We are setting up for SD card. And theasynchronous communication needs the high state
+    for sending data and recieve data in low state with clocks in SPI.
+
+Q2. I can put *f3d_delay_uS()* function into a while loop to replace delay. Using a timer
+    over a delay loop can have higher accuracy because the real delay in the loop of delay
+    can be different in diferent situations.
+
+Q3. Because the processor execute one data once time, and DMA can help the processor to
+    assign efficiently tasks. By the way, it could improve the performance.
+
+Q4. FAT locates the file in the SD. The corruption of an entry in the table could lead parts
+    of a file to be lost if two different files are in a same location.
+
+Q5. FAT16 limits the 512 entries, and FAT32 does not limit the number of entries.
+
+The difficulty for me is figuring out DMA working. And I learned how to using DMA to improve
+my image display performance.

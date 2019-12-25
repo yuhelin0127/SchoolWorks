@@ -1,0 +1,58 @@
+
+gcd.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <gcd>:
+   0:	b4f0      	push	{r4, r5, r6, r7}
+   2:	2200      	movs	r2, #0
+   4:	2401      	movs	r4, #1
+
+00000006 <LP1>:
+   6:	0003      	movs	r3, r0
+   8:	4023      	ands	r3, r4
+   a:	d106      	bne.n	1a <LP2>
+   c:	460b      	mov	r3, r1
+   e:	4023      	ands	r3, r4
+  10:	d103      	bne.n	1a <LP2>
+  12:	0840      	lsrs	r0, r0, #1
+  14:	0849      	lsrs	r1, r1, #1
+  16:	3201      	adds	r2, #1
+  18:	e7f5      	b.n	6 <LP1>
+
+0000001a <LP2>:
+  1a:	4288      	cmp	r0, r1
+  1c:	d012      	beq.n	44 <DONE>
+
+0000001e <CASE1>:
+  1e:	4603      	mov	r3, r0
+  20:	4023      	ands	r3, r4
+  22:	d101      	bne.n	28 <CASE2>
+  24:	0840      	lsrs	r0, r0, #1
+  26:	e7f8      	b.n	1a <LP2>
+
+00000028 <CASE2>:
+  28:	460b      	mov	r3, r1
+  2a:	4023      	ands	r3, r4
+  2c:	d101      	bne.n	32 <CASE3>
+  2e:	0849      	lsrs	r1, r1, #1
+  30:	e7f3      	b.n	1a <LP2>
+
+00000032 <CASE3>:
+  32:	4288      	cmp	r0, r1
+  34:	d303      	bcc.n	3e <DEFAULT>
+  36:	d002      	beq.n	3e <DEFAULT>
+  38:	1a40      	subs	r0, r0, r1
+  3a:	0840      	lsrs	r0, r0, #1
+  3c:	e7ed      	b.n	1a <LP2>
+
+0000003e <DEFAULT>:
+  3e:	1a09      	subs	r1, r1, r0
+  40:	0849      	lsrs	r1, r1, #1
+  42:	e7ea      	b.n	1a <LP2>
+
+00000044 <DONE>:
+  44:	4090      	lsls	r0, r2
+  46:	bcf0      	pop	{r4, r5, r6, r7}
+  48:	4770      	bx	lr

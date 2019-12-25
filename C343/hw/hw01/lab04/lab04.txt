@@ -1,0 +1,21 @@
+C343 / Summer 2018
+Lab Mini-Assignments 04
+Name: Yuheng Lin
+Username: yuhelin
+
+
+For Task 1. Just run System.out.println("java.vm.version is " + System.getProperty("java.vm.version"));
+The output will be "java.vm.version is 25.162-b12", and this is my java mv version.
+
+For Task 2.
+Outputs are:
+Student Information
+Name: Ray
+Department: CSCI
+Student Information
+Name: Tom
+Department: SPEA
+Student Information
+Name: Jason
+Department: Kelly
+

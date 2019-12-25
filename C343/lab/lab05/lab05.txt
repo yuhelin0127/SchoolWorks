@@ -1,0 +1,15 @@
+C343 / Summer 2018
+Lab 05
+Name: Yuheng Lin
+Username: yuhelin
+
+Task A
+A ADT for 2D Arraylist of integers
+1. Get the integer at particular position in 2D Arraylist
+2. Set the integer with a different number at a particular position in 2D Arraylist
+3. Return true if the Arraylist is empty
+4. Get the integers at paricular row in the 2D Arraylist
+4. Set the integers at paricular row in the 2D Arraylist
+4. Get the integers at paricular column in the 2D Arraylist
+4. Set the integers at paricular column in the 2D Arraylist
+

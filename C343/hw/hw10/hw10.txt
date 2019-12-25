@@ -1,0 +1,73 @@
+C343 / Summer 2018
+Homework 10
+Name: Yuheng Lin
+Username: yuhelin
+
+------------------------------------------------------------------------------------------------------------------
+
+Task A
+
+1. 
+(a) Do these edges form a spanning tree (regardless whether it's a minimum cost spanning tree) for the graph?
+
+Yes, since for Dijkstra's algorithm, we just need to go through each vertex and we do not go back to the
+vertices that we have visited.
+
+(b) Do these edges form an MST for the graph?
+
+No, because in Dijkstra's algorithm, we find all the shortest paths from the source vertex. But in MST, we find
+the shortest paths from a current vertex to all its neighbors.
+
+2.
+(a) 
+
+We choose node 0 because it is easy for us to start from the first vertex as the source vertex to check the
+shortest distance to its neighbors when we use a for loop or while loop. dist[] set to 0 for node 0 because the
+distance from itself to itself is 0.
+
+(b) 
+
+In Dijkstra's algorithm, we update the distance from source vertex to current vertex. In prim's algorithm,
+we update the distance from a current vertex to its neighbors, and we update the current vertex and its parent
+as well. 
+
+(c) Prim's algorithm.
+
+3. 
+(a) 
+
+Since for a DAG, the root can go through each node by once. So we can run BFS for each node and check if
+all the nodes are visited after we run BFS. The one node that visited all the nodes in the BFS operation is 
+the root.
+
+(b) 
+
+The complexity of my method will be O(V * (V + E)).
+V is the number of vertexs. E is the number of edges.
+
+------------------------------------------------------------------------------------------------------------------
+
+Task B
+
+1.
+
+First, we add 150 as the right child node of 120. At this point, the height difference of subtrees of node 42 is 2.
+So we have to do rotations in the subtree which 42 is the root. Since node 150 has no children node. We can only do
+a rotation on node 120. So we do a left rotation on 120. 120 will be the right child node of 41. 42 will be the left
+child node of 120, and 150 will be the right child node of 120.
+
+------------------------------------------------------------------------------------------------------------------
+
+Task C
+
+1. 
+             33 | 45 | 48 |  55
+	    /   |    |    |    \
+        30|31  38    47  50|52  60|61
+
+2. 
+
+Insert 55 to in between 52 and 60. Now we have a internal node has 4 children which is good.
+Insert 61, there are already 4 children in that node. So we need to move a child to its parent node.
+Since we now have 5 children in the node. Take the middle number 55 and put it to its parent node
+50 and 52 will be at the left of 55, 60 and 61 will be at the right of the 55.

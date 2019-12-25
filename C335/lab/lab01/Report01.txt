@@ -1,0 +1,7 @@
+Yuheng Lin
+yuhelin
+2019/08/30
+Lab01 - Hello World
+In this lab, I set up my github for C335 lab and learned how to print hello world in C
+My difficulty is that I forgot quite many of my C language knowledge since I have not used C for a long time.
+

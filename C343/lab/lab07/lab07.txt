@@ -1,0 +1,28 @@
+C343 / Summer 2018
+Lab 07
+Name: Yuheng Lin
+Username: yuhelin
+
+
+
+-----------------------------------------------------------------------
+First version of removeAt()
+The best for this version of removeAt() is that the runtime of it will
+be O(1). Because we just need a random access to get in a particular index
+position. The bad thing about it is that we just replace the element we want
+to remove by null. So the size of array will not change. As result, the size
+of array will not match with the useful elements in the array so that we waste
+some spaces in the array. Lastly, it does not give a exception when the index
+is bigger than the size of the array.
+
+
+-----------------------------------------------------------------------
+Second version of removeAt()
+The best for this version of removeAt() is that it is not just removeing
+the element from particular position, it also moves all the elements those
+are after the removing element to the left. So that the size of the array
+updates at the same time. And no wasted spaces. The bad thing about it is that
+since we need to move the elements those are after the removing element to left,
+we need to go through a lots of elements in the array. As result, the runtime of
+this removeAt() method will be O(n). 
+

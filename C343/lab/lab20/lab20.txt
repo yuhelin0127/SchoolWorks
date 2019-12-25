@@ -1,0 +1,52 @@
+C343 / Summer 2018
+Lab Mini-Assignments 20
+Name: Yuheng Lin
+Username: yuhelin
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Task A
+
+1.                  41
+                  /    \
+                 /      \
+                /        \
+               20        55
+             /    \    /    \
+            11    26  50     65
+                 /  \
+                23  29
+
+
+After insert 23 as the left child node of 26. Node 29 has a height different of his subtrees 2. Do a rotation with 26 with 29. 29 will be the right
+child node of 26.
+After insert 55 as the right child node of 50. Node 65 has a height different of his subtrees 2. Do a rotation with 65 and 50. Still has a height
+difference 2 for node 50. Then do a rotation with 50 and 55. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Task B
+
+1. Cost: 23
+
+2.
+      
+       | A   B   C   D   E   F
+    --------------------------- 
+       | ∞   ∞   ∞   0   ∞   ∞
+     D | ∞   15  ∞   0   3   ∞
+     E | ∞   15  5   0   3   10
+     C | 10  11  5   0   3   10
+     F | 2   11  5   0   3   10     
+     A | 2   3   5   0   3   10
+     B | 2   3   5   0   3   10 
+
+
+
+     D --> E
+     E --> C
+     E --> F
+     F --> A
+     A --> C
+
+3. PDF File lab20A1.pdf

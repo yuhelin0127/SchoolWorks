@@ -1,0 +1,27 @@
+Name: Yuheng Lin
+Username: yuhelin
+Partner: Griffin Halloran
+
+Q1. Since nunchuk uses I2C to get all the info, so there is no need to initialize the pins
+
+Q2. f3d_i2c1_read_nunchuk() does not have to check inputs. If the multiple bytes were involved in the transfer
+
+Q3. unsigned char jx;	// x axis of bar(0 to 255)
+    unsigned char jy;	// y axis of bar(0 to 255)
+    unsigned short ax;	// x axis of analog 
+    unsigned short ay;	// y axis of analog
+    unsigned short az;	// z axis of analog 
+    unsigned char c;	// c button(0 or 1)
+    unsigned char z;	// z button(0 or 1)
+	
+Q4. For case that equal to 2, only z button is pressed
+    For case that equal to 1, only c button is pressed
+    For case that equal to 0, both of buttons are pressed
+    For case that equal to 3, no button is pressed
+	
+Difficulty
+The main difficulty I had was to set all the initializations well and set the displays switch circlely
+
+What I have learned
+I have learned that the infomation we need to display all the variables we track should be read and write all the time,
+and we need to update before we switch to another display to show other variables

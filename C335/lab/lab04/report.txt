@@ -1,0 +1,30 @@
+Name: Yuheng Lin
+Username: yuhelin
+Partner: Alexander Tames
+
+Questions
+
+1. How many connections are required to communicate over UART?
+Two. which are TX and RX.
+
+2. What is the purpose of "alternate functions" for GPIO pins?
+The purpose of "alternate functions" for GPIO pins is to control other functions depends on the peripheral.
+
+3. Define "baud rate" in your own words.
+A rate that measure the speed of transferring information in short amount of time.
+
+4. Why do we need newlib_stubs? Specifically, is there a reason that printf() won't work on the board without it?
+Because Newlib_stubs provide a more full-featured printf() to us. If we do not use the newlib_stubs, the data that
+we transfer to the board cannot prevent the library from buffing I/O.
+
+5. Give an example of a situation in which the Salae Logic Analyzer is the best debugging method and include a screen shot of the Logic application.
+If our program does not work well, the Salae Logic Analyzer can detect the input and display it to us.
+
+
+What I have learned
+
+I learn that how to setup my STM32 to send and recieve characters to the linux host and port my program to the STM32.
+
+Diffculty
+
+It took a long time to figure out how SerialT code work. And I noticed that SerialT function can only help run the function in main once after it called the first time.

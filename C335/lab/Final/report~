@@ -1,0 +1,13 @@
+Name: Yuheng Lin(yuhelin)
+Partner: Hongrui Chen(hc44)
+Date: 2019/11/21
+
+Q1. What is the significance of the peripheral base address, as in the code excerpt below? Where does it point?
+
+Q2. Why is it necessary to enable incrementing as done in the step shown here? What will the DMA controller do in response to this configuration?
+
+Q3. Why is the line of code shown below necessary?
+
+Q4. For transfers of less than 4 bytes, what is the reason for not using the xchng_datablock() function?
+
+Q5. Why is it important for the DMA controller and the audio player to work on differnt portions of Audiobuf?

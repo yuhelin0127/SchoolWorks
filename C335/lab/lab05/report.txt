@@ -1,0 +1,24 @@
+Name: Yuheng Lin
+Username: yuhelin
+Partner: Haoyu Shi
+
+1. What does the CS pin do (the CS pin is called SS in the lab manual)?
+   CS pin accesses the slaves and use slaves to send and receive data.
+
+2. Why do you set the CS high at the end of the pin initializations? What other functions in f3d_gyro.c change CS from low to high, or from high to low?
+   Because you want to make sure the CS will match the pin at the begining and end of read and write.
+   f3d_gyro_read and f3d_gyro_write in f3d_gyro.c change CS from low to high, and high to low.
+3. How do you hook up multiple peripherals on one SPI (Serial Peripheral Interface) bus?
+   We set each slave to low and set the slave I use next to high, because we can only activate slaves once through SPI bus
+4. The STM has an Operating Frequency of 72 MHz. When initializing SPI1, what do you set the baud rate prescaler to? What is the resulting SPI clock frequency?
+   Baud rate prescaler: fast - 6, medium - 24, slow - 180. 
+   The resulting SPI clock frequency is 8MHz.
+5. Does a peripheral ("Slave") need to be configured with the transmission speed before it can communicate with the microcontroler ("Master")? Why would you want to be able to do on-the-fly changes in transmission speed?
+   Yes, since SPI bus can contain multiple slaves with different speeds.
+   
+What I learned:
+GDB to help debugginig and how it accesses the functions within your code.
+
+What the difficulty:
+The major difficulty is that we have to make sure how to use a delay function and getchar to print out the right x,y,z axis
+in main.c

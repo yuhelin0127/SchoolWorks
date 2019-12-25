@@ -1,0 +1,53 @@
+Name: Yuheng Lin
+Username: yuhelin
+Partner: Dylan Taylor
+
+Question 1
+
+    It has 14 pins
+    pins	names
+    1		Vdd_I0
+    2		SCL
+    3		SDA
+    4		INT2
+    5		INT1
+    6		C1
+    7		GND
+    8		Reserved
+    9		DRDY
+    10		Reserved
+    11		Reserved
+    12		SETP
+    13		SETC
+    14		Vdd
+    
+	The accelerometer/magnetometer is sitting on the right of the center of STM board,
+	it is a rectangle chip.
+    2.5 vdd are required to power the accelerometer/magnetometer
+
+Question 2
+    
+	Since we need to set up and update the accelerometer/magnetometer data continuously.
+    following lines of codes are initializing the accelerometer and magnetometer data
+	so that there is no need to read it first then write on it.
+	
+Question 3
+
+    The following lines of codes are looping three times for all axis, x, y and z. It does the
+    bit shift left by 8 and divides the result by 16, then it stores the result into the raw_data
+    set. And it casts the raw_data to float and divides the raw_data by 1000.
+
+Question 4
+
+    Since while we are moving the board, the compass data is changing constantly all the time, if
+    we do not tilt compensate our compass computation and track it all the time, the value in 
+	the data would change in positive and negative.
+	
+Diffculties
+
+    Compass visualization is the most complex and taxing task in lab7. Because we have to figure out
+	how to use the trigonometric function and modify to match different heading angle values.
+	
+What I have learned
+    
+	I have learned how to get pitch and roll value and how the common compass works in devices. 

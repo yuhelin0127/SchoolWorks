@@ -1,0 +1,43 @@
+C343 / Summer 2018
+Homework 03
+Name: Yuheng Lin
+Username: yuhelin
+
+--------------------------------------------------------------------------------------
+
+Task 1:
+
+Start
+For 100000 iterations it took 40 milliseconds.
+
+--------------------------------------------------------------------------------------
+
+Task 2:
+
+For 105000 iterations it took 60 milliseconds.
+Start
+For 110000 iterations it took 40 milliseconds.
+Start
+For 120000 iterations it took 30 milliseconds.
+Start
+For 130000 iterations it took 140 milliseconds.
+Start
+For 140000 iterations it took 70 milliseconds.
+
+--------------------------------------------------------------------------------------
+
+Task 3:
+In this method, we accpect 2 input which are two Sorted linkedlist;
+Then merge them into one Sorted linkedlist. So, use two iterators to
+track and get the integer from each list and compare them. We add the smaller
+one into our new linkedlist and we call next() to update the iterator to next integer.
+If one of the iterator is empty, just add the rest of integer in another iterator
+into the linkedlist. Same thing for another iterator.
+
+--------------------------------------------------------------------------------------
+
+Task 4:  
+The class CircularLList is quite similar to the LList. The difference is that the head of
+the doublely linked list is connected to tail, and the tail is connected to the head.
+So we should make the next of tail as head, the previce of head as tail to make the list
+circular.

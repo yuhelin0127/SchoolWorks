@@ -1,0 +1,33 @@
+C343 / Summer 2018
+Homework 06
+Name: Yuheng Lin
+Username: yuhelin
+My teammate : Hongrui Chen(Username: hc44)
+
+-----------------------------------------------------------------------------------------------------
+
+I am responsible for the first method flood() in this hw06.
+My teammate Hongrui Chen is responsible for the second method suggest() which
+help autoplay to be smarter.
+
+-----------------------------------------------------------------------------------------------------
+My algorithm for flood():
+
+I wrote a helper method getNeighbor() accpect a Coord and then add its
+up, down, left, and right coords that are in the game board to a new linkedlist.
+
+In the flood method, first I used a for loop to get all the neighbors of each
+coord that is already in floodlist. Then I add the neighbors that match the flood color
+and those are not contained in the floodlist into floodlist.
+
+-----------------------------------------------------------------------------------------------------
+
+Time complexity of flood() method:
+
+Since we need to check all the neighbors of each coord in floodlist. We need to go through n coords
+in floodlist. And the number of neighbors we will go through is 4 * n. 
+(4 for up,down,right,left; n is the number of coords in floodlist)
+Time complexity of flood() should be n * 4 * n, which is n^2.
+
+
+

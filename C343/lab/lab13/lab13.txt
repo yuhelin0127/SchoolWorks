@@ -1,0 +1,24 @@
+C343 / Summer 2018
+lab 13
+Name: Yuheng Lin
+Username: yuhelin
+
+-------------------------------------------------------------------------------------------------
+
+What can you state about the relative values of k (the largest key value) and n (the number of records)
+ for the counting sort to be effective?
+
+When k < n, the method of counting sort will be more effective since the runtime of it will be n.
+If k > n, the method of counting sort will be less effective since the runtime of it will be k which k > n.
+
+-------------------------------------------------------------------------------------------------
+
+If k > n, what is the asymptotic running time of the counting sort algorithm?
+
+The asymptotic running time is O(k).
+
+-------------------------------------------------------------------------------------------------
+
+If k < n, what is the asymptotic running time of the counting sort algorithm?
+
+The asymptotic running time is O(n).

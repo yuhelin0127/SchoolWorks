@@ -1,0 +1,31 @@
+What's included in the hw06 folder:
+
+1) FloodIt -- starting source code for Homework 06
+
+Main-Class: FloodIt.Driver
+
+
+
+1) demo-FloodIt-solution.jar -- an excutable jar file of the FloodIt game.
+   Run this jar file to see how the game would work.
+
+
+
+   E.g. on Linux, you would type the following at command-line:
+     java -jar demo-FloodIt-solution.jar
+
+
+
+
+
+Note: files for working on silo.soic.indiana.edu.
+   to compile the starting source code from command line, you will
+   need a Manifest.txt containing this line:
+Main-Class: FloodIt.Driver
+   then run the following commands to compile, create the runnable jar
+   file, and execute the runnable jar file:
+     javac FloodIt/*
+     jar cfm FloodIt-starting.jar Manifest.txt FloodIt/*
+     java -jar FloodIt-starting.jar
+
+

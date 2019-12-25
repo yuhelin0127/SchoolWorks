@@ -1,0 +1,36 @@
+Team 11
+Name: Yuheng Lin(yuhelin)
+Partner: Hongrui Chen(hc44)
+
+My task
+
+(1) Draw the basic UI for Start Scene
+
+Technical challenge: Most of the works are easy.
+
+For UI, I will stay the same. Because UI is quite easy.
+
+(2) Programing the transfer scene function
+
+Technical challenge:  The difficult part for me is to provide boolean that can help only draw the 
+scene once if the scene is not changed or there is nothing happen to the current scene.
+
+For scene, I would like to put the changing scene into a function so that my code will be easier 
+to read for my partner.
+
+(3) Programing the f3d_led to show the health of player1 and player2
+
+Technical challenge: The difficult part for me is to put the track health function into the right 
+place in the game scene. So that the led lights for health will show the right health info on the board
+
+I would still use the led to present the health of the players because it is easy to easy those with bright colors
+
+(4) Progrmaing the player2 movment and shooting function by using keybroad inputs
+
+Technical challenge: The movment of the player by tracking the getchar() from uart is quite useful. Declare a char 
+to store getchar() is necessary. For shooting function, detecting get shoot function is the most difficult 
+one because we have to tested it for many times to find the right x and y axis to declare the hit box for both players
+
+I was using a for loop in the while loop to shoot when players shoot. But the downside is that by using a for loop, 
+players cannot move when they shoot. So, we decide to using the while loop in the way of making change of y axis of 
+the bullet to make the bullets move so that the players can also move when there are bullets moving in the scene. 

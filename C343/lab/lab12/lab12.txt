@@ -1,0 +1,27 @@
+C343 / Summer 2018
+Lab 12
+Name: Yuheng Lin
+Username: yuhelin
+My teammate for lab12 and hw06 is: Hongrui Chen (Username: hc44)
+
+-----------------------------------------------------------------------
+For the non-recusive flood(), there are three conditions we need to
+consider if we should add the neighboring cells of each coord in floodlist.
+First check if the neighboring cells are on the gaming board. Second, check if
+the neighboring cells are in the floodlist or not. Third, if the colors of 
+neighboring cells is same as the changing color. The neighboring cells that are
+satisfied with all three conditions will be added to the floodlist.
+This non-recusive flood() has a clear algorithm. It will visit every coord in the
+floodlist.
+
+
+For recusive flood(), the method will stop when the color of coord at (x,y) is not
+the flooded color. It does not check if the coord is on the board or if the coord
+is already in the floodlist. So we may end up with same coord in the floodlist which
+we will waste spaces in the list. Both of them will need to visit every coord in the
+floodlist.
+
+
+
+
+

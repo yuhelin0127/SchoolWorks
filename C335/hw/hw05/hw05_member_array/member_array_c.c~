@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int member_array_c(unsigned int *array, int e, int size){
+  if(array[size] == e) return 1;
+  else {
+    return 0;
+  }
+}

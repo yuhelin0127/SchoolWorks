@@ -1,0 +1,25 @@
+Name: Yuheng Lin(yuhelin)
+Partner: Hongrui Chen(hc44)
+Date: 2019/11/21
+
+Q1. What is the significance of the peripheral base address, as in the code excerpt below? Where does it point?
+Peripheral base address set to SPI data register which can help identify the start point of the DMA channel. It points to SPI1.
+
+Q2. Why is it necessary to enable incrementing as done in the step shown here? What will the DMA controller do in response to this configuration?
+It loads data from the receiving bus and stores the data in the peripheral's memory. The DMA controller need to access SPI to get the data.
+
+Q3. Why is the line of code shown below necessary?
+After Rx and Tx buses cycle onece, DMA controller needs to reset the status flag so that it will be ready for next transform data.
+
+Q4. For transfers of less than 4 bytes, what is the reason for not using the xchng_datablock() function?
+Since any data that is less than 4 bytes is small task which it does not need the DMA controller to handle with. CPU can handle that.
+
+Q5. Why is it important for the DMA controller and the audio player to work on differnt portions of Audiobuf?
+Because with the use of DMA, we can reduce the software overhead by a factor proportional to the buffersize that we are willing to allocate. The DMA hardware handles the detailsof writing individual samples to the DAC at the timer rate while an interrupthandler is responsible for refreshing the buffer.
+
+Difficulties
+Getting proper wav file to play. I have tried 8 bit and 16 bit wav file with different khz.
+Noting working
+
+What did I learn
+I have learned that DMA is a good helper when there is data that is more than 4 bytes for CPU to handle. And how the priorities of data change in DMA.

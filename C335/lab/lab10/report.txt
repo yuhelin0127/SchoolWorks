@@ -1,0 +1,14 @@
+Name: Yuheng Lin(yuhelin)
+Partner: Hongrui Chen(hc44)
+Date: 2019/11/14
+
+Difficulties
+
+1. Pick if or while loop for user_btn_read in systick to change the hz of the light led
+2. Reading the pages that explain the getchar and putchar for transmittor and receivor for uart
+
+
+What did you learn
+1. Reflesh how a queue work - queue is empty when head = tail etc..
+2. How interupt work in the system and how the handler works with it - when a handler runs, disable the interupt state
+and when the interupt ends, enable the interupt state for uart to detect any interuptions

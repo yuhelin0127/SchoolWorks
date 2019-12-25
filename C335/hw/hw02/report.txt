@@ -1,0 +1,17 @@
+Name: Yuheng Lin
+Username: yuhelin
+Date: 2019/10/02
+HW02 report
+
+1. Address and size of global variable state.
+   The address is 0x19db0, and the size is 4 bytes.
+2. Address and size of global variable state_counter.
+   The address is 0x19db4, and the size is 4 bytes.
+3. Starting address and size of function stop_light().
+   The address is 0x8afd, and the size is 184 btyes.
+4. Starting address and size of function inc().
+   The address is 0x8c2d, and the size is 4 btyes.
+5. Largest function in the executable HW02.elf.
+   The largest function is _malloc_r()
+6. Overall size of the executable HW02.elf in bytes.
+   The size is 97,224 bytes. 

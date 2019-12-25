@@ -1,0 +1,43 @@
+C343 Summer 2018
+Homework 09
+Name: Yuheng Lin
+Username: yuhelin
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Task B
+
+1. Explain why, in the worst case, Dijkstra's algorithm is (asymptotically) as efficient as any algorithm for
+   finding the shortest path from some vertex i to another vertex j.
+
+   Dijkstra's algorithm does not just find the shortest path from a vertex to another vertex. It finds the
+   shortest paths from a vertex to all the other vertex and stores the paths into an array. So even in the
+   worst case, we need go through every vertex. It is just like we are doing a graph traversals.
+   
+2. 
+              4   1   2   3   5   6
+  -------------------------------------
+  initial |   0   ∞   ∞   ∞   ∞   ∞
+     4    |   0   20  5   ∞   11  10
+     2    |   0   15  5   8   11  10
+     3    |   0   15  5   8   11  10 
+     5    |   0   15  5   8   11  10
+     6    |   0   15  5   8   11  10
+     
+        
+3.  Write an algorithm to solve the single-destination shortest-paths problem.
+  
+    Take the graph then reverse the arcs in the edges; And run BFS with the started point vertex the specified as
+    destination, this should give us the all the single source shortest paths to the specified vertex.
+
+
+
+4.                     A
+                 1   /   \   -20
+                   B  ---  C
+                       2
+                       
+   There is an example when we have a negative weight in the graph. If we want to find the shortest path from A to C.
+   Let 's say we go from    A ---> B ---> C the total weight will be 3. But if we go from A --> B --> C --> A --> B --> C,
+   the total weight will be -34 which is even smaller than from A --> C (-20). And as it keeps repeating run in a circle, 
+   the total weight of the path will be smaller.

@@ -1,0 +1,25 @@
+Name: Yuheng Lin
+Partner: William, Rushton
+Username: yuhelin
+
+1. What are specs of the board you are using (ex. Speed, RAM, Flash)?
+RAM, Speed, Flash, Leds, user button, and processor.
+
+2. What does GPIO stand for?
+"General Purpose Input/Output".
+
+3. Is the provided delay function accurate? This delay function does not have a parameter!
+Yes, the delay function works accurately in my while loop.
+
+4. What are the Port and Pin Numbers of the two Green LEDs?
+Two Green LEDs use Port E, and one Pin# is 11 and another is 15
+
+5. What are the public attributes of the GPIO_InitTypeDef Struct?
+The public attributes are: uint32_t GPIO_Pin GPIOMode_TypeDef GPIO_Mode GPIOSpeed_TypeDef GPIO_Speed GPIOOType_TypeDef GPIO_OType GPIOPuPd_TypeDef GPIO_PuPd
+
+Difficulties
+1. Setting up the environment takes a long time to do
+2. Understanding the code of initiating the led and button
+
+What did I learn?
+I learned how to download and complie my c file that can work on a board!

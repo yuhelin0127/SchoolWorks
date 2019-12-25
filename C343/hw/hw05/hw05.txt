@@ -1,0 +1,116 @@
+C343 / Summer 2018
+Homework 05
+Name: Yuheng Lin
+Username: yuhelin
+
+-----------------------------------------------------------------
+
+Task A
+
+Length size: 4  
+The Hamming Distance of String a and b is: 2
+For hamming distance, it took 0 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 2
+For edit distance, it took 0 milliseconds to complete the method.
+
+Length size: 8
+The Hamming Distance of String a and b is: 5
+For hamming distance, it took 1 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 5
+For edit distance, it took 0 milliseconds to complete the method.
+
+Length size: 16
+DNA A : TAGCCAGCTCGGCCTA
+DNA B : CGCGGCATGTGCTTCC
+The Hamming Distance of String a and b is: 15
+For hamming distance, it took 0 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 10
+For edit distance, it took 0 milliseconds to complete the method.
+
+Length size: 32
+The Hamming Distance of String a and b is: 29
+For hamming distance, it took 0 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 18
+For edit distance, it took 1 milliseconds to complete the method.
+
+Length size: 64
+The Hamming Distance of String a and b is: 45
+For hamming distance, it took 1 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 39
+For edit distance, it took 2 milliseconds to complete the method.
+
+Length size: 128
+The Hamming Distance of String a and b is: 92
+For hamming distance, it took 0 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 77
+For edit distance, it took 9 milliseconds to complete the method.
+
+Length size: 256
+The Hamming Distance of String a and b is: 195
+For hamming distance, it took 0 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 139
+For edit distance, it took 22 milliseconds to complete the method.
+
+Length size: 512
+The Hamming Distance of String a and b is: 391
+For hamming distance, it took 1 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 264
+For edit distance, it took 62 milliseconds to complete the method.
+
+Length size: 1024
+The Hamming Distance of String a and b is: 775
+For hamming distance, it took 1 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 539
+For edit distance, it took 125 milliseconds to complete the method.
+
+Length size: 16384
+The Hamming Distance of String a and b is: 12324
+For hamming distance, it took 4 milliseconds to complete the method.
+The EDIT Distance of String a and b is: 8495
+For edit distance, it took 11054 milliseconds to complete the method.
+
+Length size: 32768
+The Hamming Distance of String a and b is: 24624
+For hamming distance, it took 8 milliseconds to complete the method.
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at DNAEditDistance.editDistance(DNAEditDistance.java:21)
+	at DNAEditDistance.main(DNAEditDistance.java:56)
+
+3. editDistance() takes longer time to run since the big-O of editDistance() is n*m or n^2 (two strings have same length),           
+   hammingDistance() takes less time to run since the big-O of it is n (single comparision within same length)
+   The running time grow with n is slow for hammingDistance() since the comparision within same position of two strings are fast.
+   For editDistance(), the running time grow with n is a little faster than hammingDistance() when n is very big. Because the
+   we need to make comparision between every character in two strings.
+
+
+
+
+------------------------------------------------------------------------------------
+
+Task B
+
+1.
+It is better for (a)(b)(d)(e) to sort the list of the numbers.
+(a) To find the minimum value in a sorted list just need to call the head or tail of the list depends on the sorted order.
+    The runtime of it will be O(1).
+(b) To find the maximum value in a sorted list just need to call the head or tail of the list depends on the sorted order.
+    The runtime of it will be O(1).
+(c) To find the mean value, we will need the sum of the all items in the list, then divide by the number of items in the list.
+    As result, a sorted list is not useful to find the mean value. The runtime of finding mean value will be O(n).
+(d) To find the median value in a sorted list is simple, we just need to call the half value of the list size. It will take O(1) to
+    find the middle value.
+(e) To find the mode value in a sorted list can save more time than in a unsorted list. Since the mode value is the value that
+    appear the most in the list. In a sorted list, same value will be together. So it is simple for us to check if the next value
+    is still the same value. We update the mode value if there is a value has more same value after it. The runtime of finding mode
+    will be O(n) since we need to go through each value in the list.
+    
+2. Hamming Distance: 4
+   Every letter is different.
+   Edit Distance: 2 
+
+              A   B   A   T
+          0   1   2   3   4
+      B   1   1   1   2   3
+      A   2   1   2   1   2
+      T   3   2   2   2   1
+      A   4   3   3   2   2

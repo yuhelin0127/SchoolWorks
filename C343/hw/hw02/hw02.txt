@@ -1,0 +1,65 @@
+C343 / Summer 2018
+Homework 02
+Name: Yuheng Lin
+Username: yuhelin
+------------------------------------------------------------------------------------------
+Exercise 4.1
+
+In list <|2, 23, 15, 5, 9>. Since the current position we at is the first element
+which is 2. We should run next() method twice to get the current position to the third
+element which is 15. Then we should run remove() method to remove the element at current
+position. So we can finally remove value 15.
+
+public void remove15(){
+	this.next().next().next().remove();
+}
+------------------------------------------------------------------------------------------
+Exercise 4.11
+
+   n > DE/(P+E)
+
+(a) n > (20 * 8) / (4 + 8) = n > 13.33333
+    Break-even point is at 13.33333
+(b) n > (30 * 2) / (4 + 2) = n > 10
+    Break-even point is at 10
+(c) n > (30 * 1) / (4 + 1) = n > 6
+    Break-even point is at 6
+(d) n > (40 * 32) / (4 + 32) = n > 35.55555
+    Break-even point is at 35.55555
+
+------------------------------------------------------------------------------------------
+Exercise 3.3
+                                      
+                                               (slowest to fastest)
+
+
+         | 2 |   log2n  |   log3n  |    n^(2/3)   |  20n | 4(n^2) |    3^n    |              n!             | 
+         ------------------------------------------------------
+    dy/dx| 0 | 1/nln(2) | 1/nln(3) | 2/(3n^(1/3)) |  20  |   8n   | ln(3)*3^n | told the fastest in lecture |
+
+------------------------------------------------------------------------------------------
+Exercise 3.8
+
+(a) O(n) and Big-Omega(n)
+    Suppose c = c1 and n0 = 1
+    For upper bound, c1n <= cn, n > n0
+    For lower bound, c1n <= cn, n < n0
+(b) O(n^3) and Big-Omega(n^3)
+    Suppose c = c2 and n0 = 1
+    For upper bound, c2n^3 + c3 <= cn^3 + c3, n > n0^6
+    For lower bound, c2n^3 + c3 >= cn^3 + c3, n < n0
+(c) O(nlogn) and Big-Omega(nlogn)
+    Suppose c = c4, C = c5 and n0 = 1
+    For upper bound, c4nlogn + c5n <= cnlogn + Cn, n > n0
+    For lower bound, c4nlogn + c5n >= cnlogn + Cn, n < n0
+(d) O(n^6) and Big-Omega(n^6)
+    For upper bound, whatever the n value is, 2^n < n^6
+    For lower bound, whatever the n value is, 2^n < n^6.
+    
+
+------------------------------------------------------------------------------------------
+Exercise 3.12
+
+(i) O(n) since every number is needed to be checked if it is even or not.
+
+------------------------------------------------------------------------------------------

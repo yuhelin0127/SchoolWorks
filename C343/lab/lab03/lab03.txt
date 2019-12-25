@@ -1,0 +1,21 @@
+C343 / Summer 2018
+Lab  03
+Name: Yuheng Lin
+Username: yuhelin
+
+
+Task A;
+
+MyCard should contain a arraylist of String named deck such like {"C1", "H3", ....}.
+For initialize() method, I used a for loop in a for loop and lists of numbers(1-13) and strings(C,S,H,D)
+to add a new String named card to the deck I created first.
+For String drawRandomCard() method, I used Random to get a random number within 0 to 51 to get a random card from the deck.
+And I added a getdeck() method to get the whole deck for testing.
+
+
+Task B;
+
+A Tweet contains a name:String and content:String.
+method printContent() print out the content of a tweet by using printing out this.content
+method contain(String a) get the content of a tweet by using this.content, then I used the 
+build in method boolean contains() to compare String a and String content. Output is a boolean.

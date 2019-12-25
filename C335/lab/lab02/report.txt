@@ -1,0 +1,16 @@
+Name: Yuheng Lin
+Date: 2019/09/06
+Class: CSCI-C335 lab02
+
+Results:
+1. Successfully complie and run my own make c.file
+2. Successfully complie and run poly.c and dump.c
+3. Complete my own version of dump memory in dump.c
+
+Difficulties:
+1. understand the ploy.c and dump.c , since the memory use and address are confusing in c
+2. write my own dump.c, since the elements that are printed are many
+
+What did I learn:
+1. How many bytes of some type such as char, short, integer, float, and double in c
+2. How to use %d %0hd %ld %0x %c %s %p %-f %+e and other % symbol to present our data.

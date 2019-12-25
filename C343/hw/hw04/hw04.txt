@@ -1,0 +1,67 @@
+C343 / Summer 2018
+Homework 02
+Name: Yuheng Lin
+Username: yuhelin
+
+---------------------------------------------------------------------------------------------
+
+Task B
+
+2. Exercise 5.7
+
+In order to get the Nodes by each level, we will need a helper function
+to track the current level.
+For the levelOrder(Node n) method, the input is the root, we start from the root level 1
+use a for loop to track the each level within int h(height of the tree).
+In the helper function, we have two input which is the current node and current level.
+If the node's level is equal to the current level; return the key, if not, set the node
+as its left node and right node and update the current level. Until the for loop in
+levelOrder() reach to the height of the tree. 
+
+3. Exercise 5.14
+The subtree of a node contains itself the more pivotal nodes. As a queue, it is important
+to save the more pivotal data.
+  
+4. Exercise 5.15
+
+(a)        15
+         /    \
+        5     20
+         \   /  \
+         7  18   25
+	   /
+          16
+
+(b) inorder: 5, 7, 15, 16, 18, 20, 25
+    preorder: 15, 5, 7, 20, 18, 16, 25
+    postorder: 16, 18, 25, 7, 5, 20, 15
+
+5. Exercise 5.24
+
+One of the leaves. Because in the maxheap, parent node is always bigger than its children nodes.
+No other rule as BST to sort the values of nodes.
+ 
+6. Exercise 5.32
+
+(a) Unsorted array or unsorted linkedlist. Since we insert the data in order,and
+    the runtime of insert for both is O(1), and the runtime of search for both is O(n).
+(b) Unsorted array and linkedlist. Since the times of insert is high and search is low. 
+    We will like to have lower runtime for insert than search. As result, 
+    unsorted array and unsorted linkedlist are the best choice.
+(c) BST. Since we need to do insert and search at the same time. The runtime of search 
+    is O(logn) which is smaller than O(n) which is the runtime of search in unsorted array or linkedlist. 
+(d) BST. Since we need to use search for a huge amount of times. We will need the smaller search runtime
+    And the runtime of insert of BST is smaller than Sorted array. As result, BST should be the best choice.
+    
+--------------------------------------------------------------------------------------------------------------------------
+
+Task C
+
+1. To find the Kth smallest value in a BST with O(logn), the most important part is that
+   we need to find a way to give up the left subtree or right subtree. Since the left node is
+   smaller than the parent node. We should start to find the Kth smallest value from the left node.
+   But what if the numbers of nodes in the left subtree is smaller than the k. Then we should go to the 
+   right node, at same time we need to update the k by substract the number of nodes on the left + 1(itself).
+   The most important pointer we need to add is size which is the number of nodes that a node has.
+
+----------------------------------------------------------------------------------------------------------------------------

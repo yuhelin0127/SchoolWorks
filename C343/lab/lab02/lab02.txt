@@ -1,0 +1,30 @@
+C343 / Summer 2018
+Lab Mini-Assignment 02
+Name: Yuheng Lin
+Username: yuhelin
+
+
+
+From example 1 to 6, I chose example 1. 
+In the condition of for loop, 
+we use counter++ after i = 0 and i++ to track runtime of n.
+Since sum++ in the for loop is a constant step,
+"counter++" is not needed to add after constant step.
+
+
+
+For example 7,
+In the both for loop condition, we use counter++
+after i = 1, j = 1 and i++, j++ to track the runtime in for loop.
+Then in the if statement in the for loop, we use counter++ as well
+to track the runtime for a nonconstant code in for loop.
+Last, get a min number within three numbers by using Math.min() twice.
+
+
+
+For Example 1, n = 10   instructioncounter = 10   (instructioncounter / n) = 1
+For Example 7, n = 10   instructioncounter = 210   (instructioncounter / n) = 21
+For Example 1, n = 100   instructioncounter = 100   (instructioncounter / n) = 1
+For Example 7, n = 100   instructioncounter = 20100   (instructioncounter / n) = 201
+For Example 1, n = 1000   instructioncounter = 1000   (instructioncounter / n) = 1
+For Example 7, n = 1000   instructioncounter = 2001000   (instructioncounter / n) = 2001

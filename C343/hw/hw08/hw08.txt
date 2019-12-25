@@ -1,0 +1,49 @@
+C343 / Summer 2018
+Homework 08
+Name: Yuheng Lin
+Username: yuhelin
+
+------------------------------------------------------------------------------
+
+Task B
+
+1.    | A  B  C  D  E  F
+      |------------------
+    A |    1  1        1
+    B | 1     1  1      
+    C | 1  1        1  1
+    D |    1        1
+    E |       1  1     1
+    F | 1     1     1
+
+
+2.  
+    Vertex   Adjacency-list
+      A  ->   B -> C -> F -> null
+      B  ->   A -> C -> D -> null
+      C  ->   A -> B -> E -> F -> null
+      D  ->   B -> E -> null
+      E  ->   C -> D -> F -> null
+      F  ->   A -> C -> E -> null
+
+
+3. 
+   space for matrix:  2 * 6(label) * 2(bytes for label) + 6 * 6 (all edges) * 1(byte for an edge) = 24 + 36 = 60 bytes
+   space for list:    18(labels in adj-list) * 2(bytes for label) + 24(pointers) * 4(bytes for a pointer) = 36 + 96 = 132 bytes
+   adj-list will need more space.
+
+4.
+   space for matrix:  2 * 6(label) * 1(bytes for label) + 6 * 6 (all edges) * 1(byte for an edge) = 12 + 36 = 48 bytes
+   space for list:    18(labels in adj-list) * 1(bytes for label) + 24(pointers) * 2(bytes for a pointer) = 18 + 48 = 66 bytes
+   adj-list will need more space.
+
+
+5.
+
+DFS: F(1) -> E(2) -> C(3) -> A(4) -> B(5) -> D(6) 
+
+6.
+
+BFS: F(1) --- A(2) --- B(3)
+      |  \
+     C(2) E(2) --- D (3)

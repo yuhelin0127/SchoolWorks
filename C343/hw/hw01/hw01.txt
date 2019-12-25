@@ -1,0 +1,14 @@
+C343 / Summer 2018
+Homework 01
+Name: Yuheng Lin
+Username: yuhelin
+
+3.12
+(a) 成(1)
+(b) 成(n)
+(c) 成(n^2)
+(d) 成(n^2)
+(e) 成(n log n)
+(f) 成(n log n)
+(g) 成(n^2 * log n)
+(h) 成(n^2)
